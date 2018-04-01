@@ -1,30 +1,21 @@
-	.section	__TEXT,__text,regular,pure_instructions
-	.macosx_version_min 10, 13
-	.globl	_multstore
-	.p2align	4, 0x90
-_multstore:                             ## @multstore
+	.file	"mstore.c"
+	.text
+	.globl	multstore
+	.type	multstore, @function
+multstore:
+.LFB0:
 	.cfi_startproc
-## BB#0:
-	pushq	%rbp
-Lcfi0:
-	.cfi_def_cfa_offset 16
-Lcfi1:
-	.cfi_offset %rbp, -16
-	movq	%rsp, %rbp
-Lcfi2:
-	.cfi_def_cfa_register %rbp
 	pushq	%rbx
-	pushq	%rax
-Lcfi3:
-	.cfi_offset %rbx, -24
+	.cfi_def_cfa_offset 16
+	.cfi_offset 3, -16
 	movq	%rdx, %rbx
-	callq	_mult2
+	call	mult2
 	movq	%rax, (%rbx)
-	addq	$8, %rsp
 	popq	%rbx
-	popq	%rbp
-	retq
+	.cfi_def_cfa_offset 8
+	ret
 	.cfi_endproc
-
-
-.subsections_via_symbols
+.LFE0:
+	.size	multstore, .-multstore
+	.ident	"GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609"
+	.section	.note.GNU-stack,"",@progbits
