@@ -1,1 +1,4 @@
 **/*.out
+**/*/btest
+**/*/fshow
+**/*/ishow
