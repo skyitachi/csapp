@@ -3,3 +3,13 @@ Border relations with Canada have never been better.
 
 ### phase_2
 1 2 4 8 16 32
+
+### phase_3
+7 327
+6 682
+5 206
+4 389
+3 256
+2 707
+1 311
+0 207
