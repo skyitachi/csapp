@@ -16,3 +16,15 @@ Border relations with Canada have never been better.
 
 ### phase_4
 0 0
+
+### phase_5
+ionefg
+
+### phase_6
+4 3 2 1 6 5
+
+### secret_phase
+### use gdb
+set {char [11]} 0x603870 = "0 0 DrEvil"
+
+enter: 22
